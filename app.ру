@@ -1,0 +1,12 @@
+"""
+This file is a bridge for Render.com to find the Flask app.
+The main bot code is in bot.py
+"""
+
+from bot import app
+
+# app is already defined in bot.py
+# This file just re-exports it for Render
+
+if __name__ == "__main__":
+    app.run()
